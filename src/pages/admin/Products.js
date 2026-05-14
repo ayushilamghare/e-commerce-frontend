@@ -8,7 +8,7 @@ import moment from "moment";
 
 export default function AdminProducts() {
   // context
-  const [auth, setAuth] = useAuth();
+  const [auth] = useAuth();
   // state
   const [products, setProducts] = useState([]);
 

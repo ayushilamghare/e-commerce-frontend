@@ -11,7 +11,7 @@ const { Option } = Select;
 
 export default function AdminProduct() {
   // context
-  const [auth, setAuth] = useAuth();
+  const [auth] = useAuth();
   // state
   const [categories, setCategories] = useState([]);
   const [photo, setPhoto] = useState("");
@@ -81,7 +81,7 @@ export default function AdminProduct() {
               <div className="text-center">
                 <img
                   src={URL.createObjectURL(photo)}
-                  alt="product photo"
+                  alt="Preview"
                   className="img img-responsive"
                   height="200px"
                 />
